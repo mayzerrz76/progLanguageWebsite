@@ -1,0 +1,425 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Dec 1, 2020, 11:22:10 AM
+    Author     : Ryan May
+*/
+
+body{
+    font-size: 100%;
+    font-family: verdana, arial, sans-serif;
+    width: 95%;
+    max-width: 1200px;
+    background-image: -webkit-linear-gradient(90deg, 
+        white 0%, #ff9966 50%, white 100%);
+    margin: 0 auto;
+    
+}
+
+/* HEADER */
+
+header{
+    border-bottom: 5px solid #ff6600;
+    border-left: 5px solid #ff6600;
+    border-right: 5px solid #ff6600;
+    padding-bottom: 1em;
+    padding-top: .5em;
+    background-image: -webkit-linear-gradient(30deg, 
+        navy 0%, steelblue 50%, navy 100%);
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+header img {
+    border: 3px solid #ff6600;
+    float: left;
+    padding: 0px;
+    margin: 30px;
+        border-bottom-left-radius: 1em;
+    border-radius: 1em;
+}
+
+header h2{
+    text-align: center;
+    color: #ff9966;
+    font-size: 175%;
+    padding: 0 0;
+    text-shadow: 1.5px 1.5px black;
+}
+
+
+header h3 {
+    color: #ff9966;
+    text-shadow: 1.5px 1.5px black;
+    font-size: 130%;
+    font-style: italic;
+    text-align: center;
+}
+
+/* NAVIGATION MENU */
+
+#nav_menu ul {
+     width: 100%;
+     list-style-type: none;
+     position: relative;
+}
+#nav_menu ul li {
+     float: left;
+     
+}
+#nav_menu > ul::after {
+     content: "";
+     clear: both;
+     display: block;
+}
+/* full width of body */
+/* the styles for the navigation menu - formatting */
+#nav_menu ul {
+margin: 0;
+margin-top: 10px;
+padding: 0; }
+#nav_menu ul li {
+     width: 20%;
+     
+}
+#nav_menu ul li a {
+    text-align: center;
+    display: block;
+    padding: .7em 0;
+    background-color: steelblue;
+    border: 3px solid navy;
+    border-radius: 2em 4em;
+    color: #ff9966;
+    font-size: 100%;
+    font-weight: bold;
+    text-decoration: none;
+    text-shadow: 1.5px 1.5px black;
+}
+
+#nav_menu ul li a:hover {
+    background-color: navy;
+    color: white;
+}
+
+#nav_menu ul li a:active {
+    background-color: gray;
+}
+#nav_menu ul li a.current {
+    color: yellow !important;
+    background: navy;
+    text-shadow: none;
+}
+
+main{
+    width: 100%;
+}
+
+#mainimg {
+    margin: 10px 0 10px;
+    width: 99.625%;
+    max-height: 180px;
+    border: 2px solid navy;
+    border-radius: 1em;
+}
+
+
+
+#homepic{
+    position: relative;
+    float: left;
+    margin-top: -40px;
+    padding-left: 20px;
+    text-shadow: 1.5px 1.5px black;
+}
+
+.languagemain {
+    padding-top: 15px;
+}
+
+#javapic {
+    max-height: 100px;
+    width: 100%;
+    border-top-left-radius: .8em;
+    border-top-right-radius: .8em;
+    border-bottom: solid 3px navy;
+}
+
+.languageheader {
+    margin-top: 0;
+    
+}
+
+.list {
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+ul li{
+    padding-top: 10px;
+}
+
+#resources ul li a{
+    color:#ff9966;
+    text-shadow: 1px 1px black;
+}
+
+#resources ul li a:focus, #resources ul li a:hover {
+    color:navy !important;
+}
+
+#resources ul li a:active{
+    color: orangered !important;
+    
+}
+
+#resources ul li a:visited{
+    color:#ff9966;
+}
+main section{
+    background-color: steelblue;
+    width: 47.5%;
+    float:left;
+    border-radius: 1em 1em;
+    border: 2px solid navy;
+    
+}
+
+main section h1{
+    text-align: center;
+    color: #ff9966;
+    text-shadow: 2px 2px black;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid navy;
+}
+
+#mainpic{
+    position:relative;
+    z-index: 1;
+    margin-top: -20px;
+    font-size: 70%;
+    text-shadow: 1.5px 1.5px navy;
+}
+
+
+main section p{
+    padding: 0 15px 5px;
+    text-indent: 25px;
+    color: black;
+}
+
+main aside{
+    background-color: steelblue;
+    width: 47.5%;
+    border: 2px solid navy;
+    border-radius: 1em;
+    float:right;
+    margin-bottom: 20px;
+    margin-left: 3.5%;
+    margin-right: 0;
+    
+}
+
+main aside h2{
+    text-align: center;
+    color: #ff9966;
+    text-shadow: 2px 2px black;
+    border-bottom: 3px solid navy;
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-bottom: 10px;
+}
+
+main aside p{
+    margin: 0;
+    padding: 10px 15px 10px;
+    text-indent: 25px;
+}
+
+#tutorialvid {
+    float: left; 
+    margin-left: 0; 
+    margin-top: 15px;
+}
+
+#vidaside{
+    clear:both;
+    float: left;
+    margin: 0;
+    margin: 15px 0px;
+    padding: 0;
+}
+
+iframe{
+    padding-bottom: 20px;
+}
+
+#cake {
+    width:75%;
+    padding-left: 3em;
+}
+figcaption {
+    float:right;
+    padding-right: 1em;
+    font-weight: bold;
+    color: white;
+}
+
+footer{
+    clear:both;
+    background-image: -webkit-linear-gradient(30deg, 
+        navy 0%, steelblue 50%, navy 100%);
+    color: #ff9966;
+    font-size: 100%;
+    text-shadow: 1px 1px black;
+    border-radius: 1em;
+    margin-right:0px;
+    padding-bottom: 1px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+
+#author{
+    position: relative;
+    float: left;
+    padding: 0 5em 0 1em;
+}
+
+aside figcaption{
+    font-size: 75%;
+}
+
+#cssvalid {
+    float:left;
+}
+
+#cssimg{
+    border:0;
+    width:88px;
+    height:31px;
+    padding-left:10px;
+}
+
+footer a:link, footer a:visited {
+    color: orangered;
+    font-weight: bold;
+}
+#email{
+    float: left;
+    
+}
+
+#date{
+    float:right;
+    padding-right: 10px;
+}
+
+footer::after {
+     content: "";
+     clear: both;
+     display: block;
+}
+
+
+/* hide the mobile menu initially */
+#mobile_menu {
+     display: none;
+}
+
+/* media queries */
+
+@media only screen and (max-width: 960px) {
+    
+    #author{
+        margin: 0;
+        padding:0 0 0 1em;
+    }
+    #email{
+        clear:both;
+        margin:0;
+        padding:.5em 0 0 1em;
+    }
+    #date{
+        clear:both;
+        float:left;
+        margin:0;
+        padding:.5em 0 0 1em;
+    }
+}
+@media only screen and (max-width: 767px) {
+    #nav_menu {
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    .slicknav_menu {
+        background-color: steelblue !important;
+        border-radius: 1em;
+        margin-top: 10px;
+    } 
+    
+    main section{
+        float: none;
+        width: 100%;
+        padding: 0;
+        margin: 10px 0 10px;
+    }
+    
+    #resources {
+        clear: both;
+    }
+    
+    main aside{
+        float: none;
+        width: 100%;
+        padding: 0;
+        margin: 10px 0 10px;
+    }
+    
+    #date{
+        clear: both;
+        float: left;
+    }
+    
+    aside figcaption{
+        margin-top: -20px;
+    }
+
+}
+
+@media only screen and (max-width: 420px) {
+    header h3{
+        clear:both;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    header img{
+        margin-left: 40%;
+    }
+    
+    header h2{
+        padding-top: 25px;
+        
+    }
+    header h3{
+        clear: both;
+    }
+    
+    main{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 375px){
+
+    
+    header h2{
+        padding-top: 0px;
+    }
+}
